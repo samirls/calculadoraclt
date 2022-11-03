@@ -43,11 +43,12 @@ h3{
     display: none;
 }
 main{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 20px;
+    padding-top: 20px;
 }
 #mainContainer{
     height: 100%;
