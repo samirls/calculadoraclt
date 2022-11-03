@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Calculadora Trabalhista</title>
+</head>
+<body>
+    <header id="header">
+        <div id="h1">
+            <div>Calculadora Trabalhista</div>
+        </div>
+        <h2>Saiba todos os gastos que você terá com seu empregado</h2>
+        <h3>Qual o salário mensal ajustado?</h3>
+        <form id="form">
+            <input name="input" required id="inputNumber" type="number" step=".01" placeholder="Use ponto para separar centavos. Ex: 1212.50"/>
+            <button id="submit" type="submit">Calcular</button>
+            <button type="reset">Resetar</button>
+        </form>
+    </header>
+    <main id="main" style="display:none">
+        <div style="display:none" id="mainContainer">
+            <div>Salário Mensal Ajustado: <span id="spanSalario"></span></div>
+            <div>Contribuição Previdenciária do Empregador (8%): <span id="contriPrev"></span></div>
+            <div>Seguro contra Acidentes de Trabalho - GILRAT (0,8%): <span id="GILRAT"></span></div>
+            <div>FGTS Mensal (8%): <span id="FGTSmensal"></span></div>
+            <div>FGTS Compensatório (3,2%): <span id="FGTScomp"></span></div>
+            <div>Salário + encargos: <span id="salarioMaisEncargos"></span></div><br>
+            <div>Provisão mensal para pagamento de 13º: <span id="prov13"></span></div>
+            <div>Provisão mensal para pagamento de férias: <span id="provFerias"></span></div>
+            <div>Total a Provisionar: <span id="totalProvisionar"></span></div><br>
+            <div id="custoRealMensalDiv">Custo Real Mensal: <span id="custoReal"></span></div><br>
+            <div >Obs: Custo Real Mensal é a soma do salário, encargos e provisionamentos.<br>
+                <br>
+            O Total a Provisionar é o valor de férias e 13º pagos anualmente divididos por 12, para se chegar ao valor mensal a ser guardado para a futura despesa.
+        <br>
+        <br>
+            Vale transporte pode ser descontado em até 6% do salário do Empregado.
+            <br>
+            <br>
+            Na rescisão por justa causa o FGTS compensatório (devido somente a empregado doméstico) pode ser sacado pelo Empregador.
+            <br>
+            <br>
+            Essa calculadora não consegue ser precisa devido a complexidade da lei trabalhista brasileira e sua constante mutação, sendo mais indicada para o cálculo de Empregados domésticos. Verifique a alíquota do GILRAT conforme cada caso e demais encargos que possam ser devidos.
+        </div>
+            <div id="botaoVoltar"><button id="voltar">Voltar</button></div><br>
+
+        </div>
+    </main>
+</body>
+</html>
